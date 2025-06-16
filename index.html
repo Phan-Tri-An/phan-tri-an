@@ -60,9 +60,15 @@
         import { getAuth, signInWithCustomToken, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         
         // --- CONFIGURATION ---
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : { apiKey: "DEMO_KEY", authDomain: "DEMO.firebaseapp.com", projectId: "DEMO_PROJECT" };
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-todo-app-minimal';
-        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+        const firebaseConfig = {
+  apiKey: "AIzaSyCE9guIqhZBR2w9S1uCD7uqwx6c2Tu_cMs",
+  authDomain: "viec-muon-lam-cua-toi.firebaseapp.com",
+  projectId: "viec-muon-lam-cua-toi",
+  storageBucket: "viec-muon-lam-cua-toi.firebasestorage.app",
+  messagingSenderId: "644562709025",
+  appId: "1:644562709025:web:6b97c137c08dec9d601160",
+  measurementId: "G-L86TQ47GQP"
+};
 
         let db;
         let tasksCollectionRef;
