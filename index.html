@@ -97,11 +97,7 @@
                 });
 
                 // Attempt to sign in
-                if (initialAuthToken) {
-                    await signInWithCustomToken(auth, initialAuthToken);
-                } else {
-                    await signInAnonymously(auth);
-                }
+              await signInAnonymously(auth);
             } catch (error) {
                 console.error("Firebase initialization or auth failed:", error);
                 loading.textContent = "Không thể kết nối đến dịch vụ.";
